@@ -1,0 +1,41 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $color-white;
+  padding: 5rem 0;
+
+  @include respond(under900) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+
+&__title-wrap {
+  padding-left: 2rem;
+
+  @include respond(under900) {
+    width: 100%;
+    text-align: center;
+    padding: 0 0 20px 0;
+  }
+
+  @include respond(under500) {
+    width: 100%;
+    text-align: center;
+    padding: 0 0 20px 0;
+  }
+}
+
+  &__link {
+    font-size: 40px;
+    font-family: "Magra";
+    font-weight: 700; 
+    color: inherit;
+
+    @include respond(under500) {
+    font-size: 32px;
+    }
+  
+}
+}

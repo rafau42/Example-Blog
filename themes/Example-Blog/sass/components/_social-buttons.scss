@@ -1,0 +1,38 @@
+.social-buttons {
+  padding-right: 2rem;
+
+  @include respond(under500) {
+    padding: 0 0 20px 0;
+    margin: 0 auto;
+  }
+
+  @media screen and (max-width: 500px), screen\9 {
+    margin: 0;
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    margin-left: 2px;
+
+    @include respond(under900) {
+      font-size: 4px;
+    }
+  }
+
+  &__btn {
+    padding: 7px;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__icon {
+    font-size: 28px;
+
+    @include respond(under500) {
+      font-size: 24px;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.post-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.post {
+  display: flex;
+  margin-top: 2rem;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
+  }
+
+  &__link {
+    color: $color-red;
+  }
+
+  &__time {
+    font-size: 14px;
+    color: #999;
+  }
+}

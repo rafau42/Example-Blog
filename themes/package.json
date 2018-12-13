@@ -1,0 +1,26 @@
+{
+  "name": "example-blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^9.4.2",
+    "bundle-js": "^1.0.2",
+    "compress-images": "^1.4.3",
+    "node-sass": "^4.9.4",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^6.0.1"
+  },
+  "scripts": {
+    "watch:theme": "browser-sync start --proxy \"exampleblog.local\" --files \"example-blog\"",
+    "watch:sass": "node-sass example-blog/sass/style.scss example-blog/style.css -w",
+    "bundle:js": "bundle-js ./example-blog/js/scripts.js -o ./example-blog/js/scripts-bundled.js",
+    "compile:sass": "node-sass example-blog/sass/style.scss example-blog/css/style.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b \"last 10 versions'\" example-blog/css/style.comp.css -o example-blog/css/style.prefix.css",
+    "compress:css": "node-sass example-blog/css/style.prefix.css example-blog/style.css --output-style compressed",
+    "build:css": "npm-run-all compile:sass prefix:css compress:css"
+  },
+  "author": "Rafał Woszczak",
+  "license": "ISC"
+}

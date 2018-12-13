@@ -1,0 +1,95 @@
+.container {
+  box-shadow: 0 0 2px #aaa;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+  transition: 5s;
+}
+
+html {
+  font-size: 62.5%;
+
+  @include respond(under1300) {
+    font-size: 58.3%; //1 rem = 9px, 9/16 = 56.25%
+  }
+  @include respond(under1200) {
+    font-size: 56.25%; //1 rem = 9px, 9/16 = 56.25%
+  }
+  @include respond(under1100) {
+    font-size: 54.16%;
+  }
+  @include respond(under1000) {
+    font-size: 52.083%;
+  }
+  @include respond(under900) {
+    font-size: 50%; //1 rem = 8px, 8/16 = 50%
+  }
+  @include respond(under800) {
+    font-size: 47.91%;
+  }
+  @include respond(under700) {
+    font-size: 45.83%;
+  }
+  @include respond(under600) {
+    font-size: 43.75%; //1 rem = 7px, 7/16 = 43.75%
+  }
+  @include respond(under500) {
+    font-size: 41.6%;
+  }
+  @include respond(under400) {
+    font-size: 39.58%;
+  }
+}
+
+body {
+  background-color: $color-grey;
+  box-sizing: border-box;
+  margin: 0 auto;
+  max-width: 1300px;
+
+  @include respond(under1300) {
+    padding: 1.5rem;
+  }
+
+  @include respond(under1100) {
+    padding: 0;
+  }
+}
+
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+button {
+  border: 0;
+}

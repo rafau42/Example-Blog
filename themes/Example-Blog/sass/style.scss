@@ -1,0 +1,32 @@
+/*
+Theme Name: Example Blog
+Author: Rafał Woszczak
+Version: 1.0
+*/
+
+/* Tested Resolutions: 320px - 1280 px */
+/* Tested browsers: Google Chrome, Mozilla Firefox, IE11 */
+
+@import "abstracts/mixins.scss";
+@import "abstracts/variables.scss";
+@import "base/base.scss";
+@import "base/typhography.scss";
+@import "layout/header.scss"; 
+@import "layout/navigation.scss"; 
+@import "layout/maincontent.scss"; 
+@import "layout/aside.scss"; 
+@import "layout/footer.scss"; 
+@import "pages/page-contact.scss"; 
+@import "pages/page-gallery.scss"; 
+@import "components/article.scss"; 
+@import "components/article-excerpt.scss"; 
+@import "components/buttons.scss";  
+@import "components/social-buttons.scss";
+@import "components/share-buttons.scss";
+@import "components/search.scss";
+@import "components/post-box.scss";
+@import "components/comment-box.scss";
+@import "components/gallery-box.scss";
+@import "components/comments.scss";
+@import "components/comment.scss";
+@import "components/comment-respond.scss";

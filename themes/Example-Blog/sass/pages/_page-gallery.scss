@@ -1,0 +1,31 @@
+.page-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2rem 0;
+
+  &__wrap-image {
+    margin: 2rem 0;
+    width: 47%;
+    border: 0.5rem solid $color-grey;
+
+    @include respond(under700) {
+      width: 80%;
+    }
+  }
+
+  &__image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  &__ajax-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+}

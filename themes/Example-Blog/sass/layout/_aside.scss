@@ -1,0 +1,53 @@
+.aside {
+  background-color: $color-grey-light;
+  width: 30%;
+
+  @include respond(under1000) {
+    width: 100%;
+    flex-direction: row;
+  }
+
+  &__container {
+    padding: 0 2rem;
+
+    @include respond(under1100) {
+      padding: 0 10px;
+    }
+
+    @include respond(under1000) {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    @include respond(under600) {
+      flex-direction: column;
+    }
+  }
+  &__tabbed-content {
+    @include respond(under1000) {
+      margin-left: 4rem;
+      width: 290px;
+    }
+
+    @include respond(under800) {
+      margin: 0 2rem;
+    }
+
+    @include respond(under600) {
+      margin: 0 1rem;
+    }
+
+    @include respond(under400) {
+      margin: 0;
+    }
+  }
+
+  &__heading {
+    margin: 4rem 0 1rem 0;
+    font-size: 24px;
+  }
+}
+
+.box-hidden {
+  display: none;
+}

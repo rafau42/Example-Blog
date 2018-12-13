@@ -1,0 +1,37 @@
+.comments {
+  width: 90%;
+  margin: 0 auto;
+
+  @include respond(under800) {
+    width: 95%;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    background-color: $color-grey;
+  }
+
+  &__list {
+    @include respond(under700) {
+      padding-inline-start: 15px;
+    }
+
+    @include respond(under500) {
+      padding-inline-start: 0;
+    }
+  }
+
+  &__item {
+    background-color: $color-grey;
+  }
+
+  &__loadmore-wrap {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__btn {
+    margin: 20px 0;
+  }
+}

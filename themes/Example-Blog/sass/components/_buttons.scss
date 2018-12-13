@@ -1,0 +1,57 @@
+.btn {
+  color: white;
+  transition: all 0.5s;
+  border: 0.2rem solid transparent;
+
+  &:focus {
+    border: 0.2rem solid $color-blue-light;
+  }
+
+  &--red {
+    background-color: $color-red;
+
+    &:hover {
+      background-color: $color-dark;
+    }
+  }
+
+  &--red-non-hover {
+    background-color: $color-red;
+  }
+
+  &--dark {
+    background-color: $color-dark;
+
+    &:hover {
+      background-color: $color-red;
+    }
+  }
+
+  &--main-content {
+    font-family: "Magra";
+    padding: 1rem 1.8rem;
+    margin-top: 1rem;
+  }
+
+  &--load-more {
+    background-color: $color-blue;
+    border: 0.5rem solid transparent;
+    margin: 20px auto 60px auto;
+    height: 40px;
+    padding: 0 15px;
+
+    &:hover {
+      background-color: $color-blue-light;
+    }
+  }
+
+  &--aside {
+    font-size: 14px;
+    margin: 0.5rem 0;
+    padding: 7px 14px;
+  }
+
+  &--comment {
+    padding: 7px 30px;
+  }
+}

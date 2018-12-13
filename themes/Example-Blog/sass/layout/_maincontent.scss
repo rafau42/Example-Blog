@@ -1,0 +1,23 @@
+.content-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  background-color: $color-white;
+
+  @media screen\0 {
+    display: block;
+  }
+
+  @include respond(under1000) {
+    width: 100%;
+  }
+
+  &__container-btn {
+    text-align: center;
+  }
+}

@@ -1,0 +1,23 @@
+.comment-box {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 3rem;
+}
+
+.comment-excerpt {
+  display: flex;
+  margin-top: 2rem;
+  font-size: 18px;
+
+  &__container {
+    padding-left: 1rem;
+  }
+  &__link {
+    color: $color-red;
+  }
+  &__span {
+    color: $color-dark;
+  }
+}
+
+

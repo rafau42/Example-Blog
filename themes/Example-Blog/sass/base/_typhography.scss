@@ -1,0 +1,23 @@
+body {
+    font-size: 16px;
+font-family: "Gudea";
+color: $color-dark;
+}
+
+h1, h2, h3 {
+    font-size: 20px;
+
+    @include respond(under800) {
+        font-size: 3rem;
+    }
+}
+
+button {
+    font-size: inherit;
+    font-family: inherit;
+    color: $color-white;
+}
+
+textarea, input {
+    font-size: 16px;
+}

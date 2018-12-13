@@ -1,0 +1,59 @@
+.gallery-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 0;
+  
+    @include respond(under1000) {
+      padding: 0 4rem 3rem 0;
+    }
+  
+    @include respond(under600) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: 3rem 0 3rem 0;
+      margin: 0 auto;
+    }
+  
+    &__link {
+      font-size: 24px;
+      color: $color-blue;
+      padding: 2rem 0;
+  
+      @include respond(under1000) {
+        padding: 4rem 0 2rem 0;
+      }
+  
+      @include respond(under600) {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 4rem 0 4rem 0;
+      }
+    }
+  
+    &__wrap-image {
+      margin-top: 2rem;
+      
+      @include respond(under600) {
+        width: 48%;
+        margin: 0 auto;
+      }
+  
+      @include respond(under500) {
+        width: 80%;
+        margin: 2rem auto;
+      }
+  
+      @include respond(under400) {
+        width: 90%;
+        margin: 2rem auto;
+      }
+    }
+  
+    &__image {
+      width: 100%;
+      border: 0.2rem solid $color-blue;
+    }
+  }
+  

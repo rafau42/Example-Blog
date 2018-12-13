@@ -1,0 +1,67 @@
+.article {
+  margin: 20px 2rem;
+  display: flex;
+  flex-direction: column;
+
+  &__wrap-photo {
+    width: 80%;
+    margin: 0 auto;
+
+    @include respond(under800) {
+      width: 90%;
+    }
+
+    @include respond(under500) {
+      width: 100%;
+    }
+  }
+
+  &__photo {
+    width: 100%;
+  }
+
+  &__wrap-text {
+    padding: 3rem 3rem;
+
+    @include respond(under1100) {
+      padding: 3rem 2rem;
+    }
+
+    @include respond(under1000) {
+      padding: 3rem 10rem;
+    }
+    @include respond(under800) {
+      padding: 3rem 7rem;
+    }
+    @include respond(under700) {
+      padding: 3rem 4rem;
+    }
+    @include respond(under500) {
+      padding: 3rem 1rem;
+    }
+  }
+
+  &__heading {
+    display: inline;
+    font-size: 3.5rem;
+  }
+
+  &__wrap-date-author {
+    padding: 2rem 0;
+    font-family: "Gudea";
+    color: #999;
+  }
+
+  &__author-link {
+    color: $color-blue;
+  }
+
+  &__views {
+    float: right;
+    color: $color-blue;
+    text-align: right;
+    padding: 1rem;
+    margin-top: 10px;
+    border: 2px solid $color-blue;
+  }
+}

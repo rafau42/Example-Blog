@@ -1,0 +1,139 @@
+.page-contact {
+  padding: 50px 2rem 20px 2rem;
+
+  @include respond(under1000) {
+    display: flex;
+  }
+
+  @include respond(under800) {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 20px 10px 20px;
+  }
+
+  &__wrap-text {
+    font-size: 18px;
+    padding: 0 4rem 4rem 4rem;
+
+    @include respond(under1000) {
+      padding: 0 3% 0 3%;
+      width: 48%;
+    }
+
+    @include respond(under900) {
+      padding: 0 5% 0 1%;
+      width: 48%;
+    }
+
+    @include respond(under800) {
+      width: 90%;
+      margin: 0 auto;
+      padding: 0 0 50px 0;
+    }
+
+    @include respond(under600) {
+      width: 95%;
+    }
+
+    @include respond(under500) {
+        width: 100%;
+      }
+
+    > p {
+      margin: 0;
+    }
+  }
+
+  &__wrap-form {
+    display: flex;
+    justify-content: center;
+
+    @media screen\0 {
+      margin: 0 auto;
+    }
+
+    @include respond(under1000) {
+      width: 56%;
+      margin: -20px 0 24px 0;
+    }
+
+    @include respond(under800) {
+      width: 100%;
+    }
+  }
+
+  /*! override default plugin styles */
+div.wpcf7 {
+  font-size: 16px;
+  width: 50%;
+
+  @include respond(under1000) {
+    width: 90%;
+  }
+
+  @include respond(under800) {
+    width: 65%;
+  }
+
+  @include respond(under700) {
+    width: 70%;
+  }
+
+  @include respond(under600) {
+    width: 90%;
+  }
+
+  @include respond(under500) {
+    width: 95%;
+  }
+}
+
+.wpcf7-form-control {
+  margin-top: 8px;
+}
+
+.wpcf7-text {
+  height: 18px;
+  width: 100%;
+
+  @include respond(under600) {
+    width: 100%;
+  }
+}
+
+.wpcf7-textarea {
+  width: 100%;
+  padding: 0;
+}
+
+.wpcf7-submit {
+  font-size: 16px;
+  padding: 8px 32px;
+  border: 0;
+background-color: $color-blue;
+  color: $color-white;
+  border: solid 2px $color-blue;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $color-blue;
+    transition: 0.2s;
+    border: solid 2px $color-blue;
+  }
+}
+
+.wpcf7-response-output {
+  margin: 30px 0 20px 0 !important;
+}
+
+.wpcf7-not-valid-tip {
+  font-size: 16px;
+  color: $color-red;
+}
+
+div.wpcf7 .ajax-loader {
+  background-image: url("../../plugins/contact-form-7/images/ajax-loader.gif");
+}
+
+}

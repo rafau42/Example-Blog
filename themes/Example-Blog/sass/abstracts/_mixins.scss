@@ -1,0 +1,39 @@
+@mixin respond($breakpoint) {
+    @if $breakpoint == under1300 {
+        @media only screen and (max-width: 81.25em) { @content };   
+    }
+    @if $breakpoint == under1200 {
+        @media only screen and (max-width: 75em) { @content };   
+    }
+    @if $breakpoint == under1100 {
+        @media only screen and (max-width: 68.75em) { @content };  
+    }
+    @if $breakpoint == under1000 {
+        @media only screen and (max-width: 62.5em) { @content };    
+    }
+    @if $breakpoint == under900 {
+        @media only screen and (max-width: 56.25em) { @content };     
+    }
+    @if $breakpoint == under800 {
+        @media only screen and (max-width: 50em) { @content };   
+    }
+    @if $breakpoint == under700 {
+        @media only screen and (max-width: 43.75em) { @content };  
+    }
+    @if $breakpoint == under600 {
+        @media only screen and (max-width: 37.5em) { @content };  
+    }
+    @if $breakpoint == under500 {
+        @media only screen and (max-width: 31.25em) { @content };  
+    }
+    @if $breakpoint == under400 {
+        @media only screen and (max-width: 25em) { @content }; 
+    }
+}
+
+@mixin absCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
